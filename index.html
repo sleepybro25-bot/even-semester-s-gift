@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>even semester's gift</title>
     
-    <!-- Google Fonts - Playfair Display -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             overflow-x: hidden;
         }
 
-        /* Page 1 - Welcome */
+       
         .page-1 {
             display: flex;
             justify-content: center;
@@ -72,7 +72,7 @@
             letter-spacing: 8px;
         }
 
-        /* Page 2 - Letter */
+        
         .page-2 {
             display: none;
             min-height: 100vh;
@@ -103,11 +103,10 @@
 
         .a4-paper {
             background: #ffffff;
-            /* CUSTOM BACKGROUND IMAGE - SUDAH DISET */
-            background-image: url('D:/valo/cprvvr.png');
-            background-size: cover; /* Agar gambar memenuhi kertas */
-            background-position: center; /* Posisi gambar di tengah */
-            background-repeat: no-repeat; /* Gambar tidak diulang */
+            background-image: url('cprvvr.png');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
             
             padding: 60px;
             box-shadow: 
@@ -231,14 +230,12 @@
     </style>
 </head>
 <body>
-    <!-- Page 1: Welcome -->
     <div class="page-1" id="page1">
         <div class="hi-box" onclick="goToPage2()">
             <h1 id="greeting-text">hi</h1>
         </div>
     </div>
 
-    <!-- Page 2: Letter & Spotify -->
     <div class="page-2" id="page2">
         <div class="paper-container">
             <div class="a4-paper">
@@ -294,15 +291,15 @@
     </div>
 
     <script>
-        // Random greeting generator
+        
         const greetings = ['hi', 'hola', 'halo', 'bonjour', 'ciao'];
         
         window.addEventListener('load', () => {
-            // Pick random greeting
+            
             const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
             document.getElementById('greeting-text').textContent = randomGreeting;
             
-            // Smooth scroll to top
+            
             window.scrollTo(0, 0);
         });
         
@@ -315,4 +312,5 @@
         }
     </script>
 </body>
+
 </html>
